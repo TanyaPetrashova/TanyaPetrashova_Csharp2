@@ -15,12 +15,9 @@ int c = Number / 100  % 10;
 int d = Number / 10  % 10;
 int e = Number % 10;
 
-if (a == e)
-{
-    if (b == d)
-    {
-        Console.WriteLine("It's a palindrome");
-    }
+if (a == e || b == d)
+{       
+    Console.WriteLine("It's a palindrome");
 }
 else
 {
