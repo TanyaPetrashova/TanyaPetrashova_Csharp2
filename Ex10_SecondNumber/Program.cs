@@ -7,7 +7,10 @@
 
 
 Console.WriteLine("Enter a three-digit number: ");
-string stringDigit = Console.ReadLine();
-Console.WriteLine("Second digit: " +stringDigit[1]);
+
+int number = Convert.ToInt32(Console.ReadLine());
+int a = number / 10  % 10; // нахождение второй цифры трехзначного числа
+
+Console.WriteLine(a);
 
 
