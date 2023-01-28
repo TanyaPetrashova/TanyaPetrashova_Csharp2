@@ -7,15 +7,15 @@
 // НЕЛЬЗЯ ИСПОЛЬЗОВАТЬ СТРОКИ
 
 Console.WriteLine("Enter five-digit number: ");
-int Number = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-int a = Number / 10000;
-int b = Number / 1000  % 10;
-int c = Number / 100  % 10;
-int d = Number / 10  % 10;
-int e = Number % 10;
+int firstDigit = number / 10000;
+int secDigit = number / 1000  % 10;
+int thirdDigit = number / 100  % 10;
+int forthDigit = number / 10  % 10;
+int fifDigit = number % 10;
 
-if (a == e || b == d)
+if ( firstDigit == fifDigit && secDigit == forthDigit)
 {       
     Console.WriteLine("It's a palindrome");
 }

@@ -6,17 +6,17 @@
 // 1 -> нет
 
 Console.Write("Enter a number of the day of the week: ");
-int DayNumber = Convert.ToInt32(Console.ReadLine());
+int dayNumber = Convert.ToInt32(Console.ReadLine());
 
-DayInfo(DayNumber);
+DayInfo(dayNumber);
 
-void DayInfo (int DayNumber)
+void DayInfo (int dayNumber)
 {
-    if (DayNumber == 6 || DayNumber == 7)
+    if (dayNumber == 6 || dayNumber == 7)
     {
         Console.WriteLine("Yes");
     }
-        else if (DayNumber < 1 || DayNumber > 7) 
+        else if (dayNumber < 1 || dayNumber > 7) 
         {
         Console.WriteLine("Not a day of the week");
         }

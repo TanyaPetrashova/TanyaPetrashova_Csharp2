@@ -20,8 +20,8 @@ double Bz = Convert.ToDouble(Console.ReadLine());
 double distanseAB = Math.Sqrt(Math.Pow((Bx - Ax), 2)
                   + Math.Pow((By - Ay), 2)
                   + Math.Pow((Bz - Az), 2));
-
-Console.WriteLine("Distanse between A & B: " +distanseAB);
+int count = 2;
+Console.WriteLine("Distanse between A & B: " +Math.Round(distanseAB, count));
 
 
 
