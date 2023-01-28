@@ -1,4 +1,4 @@
-﻿// Напишите программу, которая выводит третью цифру заданного числа
+﻿// Задача 13. Напишите программу, которая выводит третью цифру заданного числа
 // или сообщает, что третьей цифры нет.
 
 // 645 -> 5
@@ -8,13 +8,20 @@
 // 32679 -> 6
 
 Console.Write("Enter a number: ");
-string Number = Console.ReadLine();
+int number = Convert.ToInt32(Console.ReadLine());
+string numberText = Convert.ToString(number);
 
-if(Number.Length > 2)
+if (number < -99 || number > 99)
 {
-    Console.WriteLine("Third digit: " +Number[2]);
+    if (number > 0)
+    {
+        Console.WriteLine($"Third digit: {numberText[2]}");
+    }
+    else
+    {
+        Console.WriteLine($"Third digit: {numberText[3]}");
+    }
 }
-
 else
 {
     Console.WriteLine("No third digit");
