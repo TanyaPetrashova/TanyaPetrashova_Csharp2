@@ -1,4 +1,4 @@
-﻿// Напишите программу, которая принимает на вход трёхзначное число
+﻿// Задача 10. Напишите программу, которая принимает на вход трёхзначное число
 // и на выходе показывает вторую цифру этого числа.
 
 // 456 -> 5
@@ -6,11 +6,8 @@
 // 918 -> 1
 
 
-Console.WriteLine("Enter a three-digit number: ");
-
+Console.WriteLine("Enter a threedigit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int a = number / 10  % 10; // нахождение второй цифры трехзначного числа
-
-Console.WriteLine(a);
-
+int secDigit = number / 10  % 10;
+Console.Write($"The second digit: {secDigit}");
 
