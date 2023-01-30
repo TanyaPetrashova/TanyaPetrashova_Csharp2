@@ -8,6 +8,7 @@
 Console.WriteLine("Enter numbers separated by spaces (for example: 5 -7 9 -3 44 -89): ");
 // Конвертируем строку чисел, разделённых пробелом, в массив int:
 int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);             
+
 int M = 0;                                                                            
 for (int i = 0; i < array.Length; i++)
 {
