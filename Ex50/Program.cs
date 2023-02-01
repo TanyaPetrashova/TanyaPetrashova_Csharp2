@@ -12,14 +12,22 @@
 
 // 17 -> такого числа в массиве нет
 
-int[,] matrix = new int[4, 5];
-FillArray(matrix);
-Console.WriteLine("Array:");
-Pprint(matrix);
-Console.WriteLine("Enter row number");
+Console.Write("Enter number of rows: ");
 int row = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter column number");
+
+Console.Write("Enter number of columns: ");
 int column = Convert.ToInt32(Console.ReadLine());
+
+int[,] matrix = new int[row, column];
+FillArray(matrix);
+Console.WriteLine("Given an array:");
+Pprint(matrix);
+
+Console.WriteLine("Enter row number");
+int newRow = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter column number");
+int newColumn = Convert.ToInt32(Console.ReadLine());
 
 // Метод печати массива
 void Pprint(int[,] matr)              
@@ -44,11 +52,11 @@ void FillArray(int[,] matr)
         }
     }
 }
-if (row > matrix.GetLength(0) || column > matrix.GetLength(1))
+if (newRow > matrix.GetLength(0) || newColumn > matrix.GetLength(1))
 {
     Console.WriteLine("There is no the number in the array");
 }
 else
 {
-    Console.WriteLine($"Element value: {matrix[row - 1, column - 1]}");
+    Console.WriteLine($"Element value: {matrix[newRow - 1, newColumn - 1]}");
 }
